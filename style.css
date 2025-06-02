@@ -1,7 +1,7 @@
 /* Achtergrond night: https://www.deviantart.com/karkatdoesminecraft/art/Night-Time-Wallpaper-Minecraft-378017183 */
 
 body {
-    background-image: url(/images/achtergrondnight.png);
+    background-image: url(images/achtergrondnight.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
