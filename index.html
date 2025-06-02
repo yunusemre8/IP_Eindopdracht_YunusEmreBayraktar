@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Vechtspel</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- beginscherm: https://cdn.mos.cms.futurecdn.net/52K7sgnQLSJ8ggfyfvz9yB.jpg -->
+    <section class="scherm_1">
+        <div id="container">
+            <img src="/images/begin_scherm.png" id="begin_scherm" />
+            <img src="/images/play_button.png" id="play_button" />
+        </div>
+    </section>
+
+    <section class="scherm_2">
+        <h1>Zombie</h1>
+
+        <!-- steve: https://upload.wikimedia.org/wikipedia/it/d/d2/SteveSSBU.png -->
+        <!-- attack: https://cdn-icons-png.flaticon.com/512/8193/8193165.png -->
+        <!-- zombie: https://atlas-content-cdn.pixelsquid.com/stock-images/minecraft-zombie-w1LVvw1-600.jpg -->
+        <!-- enderman: https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/39/Enderman_Screaming.gif/revision/latest/scale-to-width/360?cb=20200413141725 -->
+        <!-- attack: https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/44/Diamond_Sword_JE3_BE3.png/revision/latest/scale-to-width/360?cb=20201017135722 -->
+        <!-- food: https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/04/Steak_JE4_BE3.png/revision/latest/thumbnail/width/360/height/360?cb=20190504055306 -->
+        <div class="container">
+            <div class="containerSteve">
+                <img class="steve" src="images/steve.png" alt="">
+                <div id="health-containerSteve">
+                    <div id="health-barSteve"></div>
+                </div>
+            </div>
+            <div class="containerButton">
+                <img id="attack" src="images/attack.png" alt="">
+                <img id="food" src="images/steak.png" alt="">
+            </div>
+            <div class="containerMob">
+                <img class="zombie" src="images/zombie.png" alt="">
+                <div id="health-containerMob">
+                    <div id="health-barMob"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scherm_3">
+        <div id="container">
+            <img src="/images/deathScreen.png" id="death_scherm">
+            <img src="/images/try_again_button.png" id="try_again_button">
+        </div>
+    </section>
+
+    <section class="scherm_4">
+        <div id="container">
+            <img src="/images/win_scherm.png" id="win_scherm">
+            <img src="/images/play_again_button.png" id="play_again_button">
+        </div>
+    </section>
+    
+<!-- alle audios zijn van deze website: https://tuna.voicemod.net/?uwu -->
+    <audio id="zombie_hurt" src="sounds/zombie_hurt.mp3"></audio>
+    <audio id="zombie_death" src="sounds/zombie_death.mp3"></audio>
+    <audio id="skeleton_hurt" src="sounds/skeleton_hurt.mp3"></audio>
+    <audio id="skeleton_death" src="sounds/skeleton_death.mp3"></audio>
+    <audio id="enderman_hurt" src="sounds/enderman_hurt.mp3"></audio>
+    <audio id="enderman_death" src="sounds/enderman_death.mp3"></audio>
+
+</body>
+
+</html>

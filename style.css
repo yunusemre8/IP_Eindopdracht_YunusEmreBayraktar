@@ -1,0 +1,138 @@
+/* Achtergrond night: https://www.deviantart.com/karkatdoesminecraft/art/Night-Time-Wallpaper-Minecraft-378017183 */
+
+body {
+    background-image: url(/images/achtergrondnight.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#attack:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#begin_scherm {
+    width: 170vh;
+    height: 100vh;
+    display: block;
+}
+
+#play_button {
+    position: absolute;
+    left: 35vh;
+    top: 40vh;
+}
+
+#death_scherm {
+    position: absolute;
+    width: 170vh;
+    height: 100vh;
+    display: block;
+}
+
+#try_again_button {
+    position: absolute;
+    width: 35%;
+    left: 55vh;
+    top: 45vh;
+}
+
+#win_scherm {
+    position: absolute;
+    width: 170vh;
+    height: 100vh;
+    display: block;
+}
+
+#play_again_button {
+    position: absolute;
+    width: 35%;
+    left: 55vh;
+    top: 45vh;
+}
+
+.scherm_1 {
+    display: block;
+}
+
+.scherm_2 {
+    display: none;
+    padding-top: 10em;
+}
+
+.scherm_3 {
+    display: none;
+}
+
+.scherm_4 {
+    display: none;
+}
+
+#attack, #food {
+    max-width: 25%;
+    transition: transform 0.2s ease;
+}
+
+#attack:hover, #food:hover {
+    transform: scale(1.25);
+}
+
+#attack:active, #food:active {
+    transform: scale(0.90);
+}
+
+.steve, .zombie {
+    height: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.containerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#health-containerMob {
+    width: 200px;
+    height: 20px;
+    border: 2px solid #000;
+    background-color: #ddd;
+    margin: 20px auto;
+}
+  
+#health-barMob {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+}
+
+#health-containerSteve {
+    width: 200px;
+    height: 20px;
+    border: 2px solid #000;
+    background-color: #ddd;
+    margin: 20px auto;
+}
+  
+#health-barSteve {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+}
